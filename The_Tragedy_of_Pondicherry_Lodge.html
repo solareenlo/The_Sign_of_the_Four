@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Tragedy of Pondicherry Lodge - The Sign of the Four</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="The_Science_of_Deduction.html"><strong aria-hidden="true">1.</strong> The Science of Deduction</a></li><li class="chapter-item expanded "><a href="The_Statement_of_the_Case.html"><strong aria-hidden="true">2.</strong> The Statement of the Case</a></li><li class="chapter-item expanded "><a href="In_Quest_of_a_Solution.html"><strong aria-hidden="true">3.</strong> In Quest of a Solution</a></li><li class="chapter-item expanded "><a href="The_Story_of_the_Bald-Headed_Man.html"><strong aria-hidden="true">4.</strong> The Story of the Bald-Headed Man</a></li><li class="chapter-item expanded "><a href="The_Tragedy_of_Pondicherry_Lodge.html" class="active"><strong aria-hidden="true">5.</strong> The Tragedy of Pondicherry Lodge</a></li><li class="chapter-item expanded "><a href="Sherlock_Holmes_Gives_a_Demonstration.html"><strong aria-hidden="true">6.</strong> Sherlock Holmes Gives a Demonstration</a></li><li class="chapter-item expanded "><a href="The_Episode_of_the_Barrel.html"><strong aria-hidden="true">7.</strong> The Episode of the Barrel</a></li><li class="chapter-item expanded "><a href="The_Baker_Street_Irregulars.html"><strong aria-hidden="true">8.</strong> The Baker Street Irregulars</a></li><li class="chapter-item expanded "><a href="A_Break_in_the_Chain.html"><strong aria-hidden="true">9.</strong> A Break in the Chain</a></li><li class="chapter-item expanded "><a href="The_End_of_the_Islander.html"><strong aria-hidden="true">10.</strong> The End of the Islander</a></li><li class="chapter-item expanded "><a href="The_Great_Agra_Treasure.html"><strong aria-hidden="true">11.</strong> The Great Agra Treasure</a></li><li class="chapter-item expanded "><a href="The_Strange_Story_of_Jonathan_Small.html"><strong aria-hidden="true">12.</strong> The Strange Story of Jonathan Small</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Sign of the Four</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Sign_of_the_Four" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Sign_of_the_Four/edit/main/src/The_Tragedy_of_Pondicherry_Lodge.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="5-the-tragedy-of-pondicherry-lodge"><a class="header" href="#5-the-tragedy-of-pondicherry-lodge">5. The Tragedy of Pondicherry Lodge</a></h1>
+<p>It was nearly eleven o’clock when we reached this final stage of our
+night’s adventures. We had left the damp fog of the great city behind
+us, and the night was fairly fine. A warm wind blew from the westward,
+and heavy clouds moved slowly across the sky, with half a moon peeping
+occasionally through the rifts. It was clear enough to see for some
+distance, but Thaddeus Sholto took down one of the side-lamps from the
+carriage to give us a better light upon our way.</p>
+<p>Pondicherry Lodge stood in its own grounds, and was girt round with a
+very high stone wall topped with broken glass. A single narrow
+iron-clamped door formed the only means of entrance. On this our guide
+knocked with a peculiar postman-like rat-tat.</p>
+<p>“Who is there?” cried a gruff voice from within.</p>
+<p>“It is I, McMurdo. You surely know my knock by this time.”</p>
+<p>There was a grumbling sound and a clanking and jarring of keys. The
+door swung heavily back, and a short, deep-chested man stood in the
+opening, with the yellow light of the lantern shining upon his
+protruded face and twinkling distrustful eyes.</p>
+<p>“That you, Mr. Thaddeus? But who are the others? I had no orders about
+them from the master.”</p>
+<p>“No, McMurdo? You surprise me! I told my brother last night that I
+should bring some friends.”</p>
+<p>“He ain’t been out o’ his room to-day, Mr. Thaddeus, and I have no
+orders. You know very well that I must stick to regulations. I can let
+you in, but your friends must just stop where they are.”</p>
+<p>This was an unexpected obstacle. Thaddeus Sholto looked about him in a
+perplexed and helpless manner. “This is too bad of you, McMurdo!” he
+said. “If I guarantee them, that is enough for you. There is the young
+lady, too. She cannot wait on the public road at this hour.”</p>
+<p>“Very sorry, Mr. Thaddeus,” said the porter, inexorably. “Folk may be
+friends o’ yours, and yet no friends o’ the master’s. He pays me well
+to do my duty, and my duty I’ll do. I don’t know none o’ your friends.”</p>
+<p>“Oh, yes you do, McMurdo,” cried Sherlock Holmes, genially. “I don’t
+think you can have forgotten me. Don’t you remember the amateur who
+fought three rounds with you at Alison’s rooms on the night of your
+benefit four years back?”</p>
+<p>“Not Mr. Sherlock Holmes!” roared the prize-fighter. “God’s truth! how
+could I have mistook you? If instead o’ standin’ there so quiet you had
+just stepped up and given me that cross-hit of yours under the jaw, I’d
+ha’ known you without a question. Ah, you’re one that has wasted your
+gifts, you have! You might have aimed high, if you had joined the
+fancy.”</p>
+<p>“You see, Watson, if all else fails me I have still one of the
+scientific professions open to me,” said Holmes, laughing. “Our friend
+won’t keep us out in the cold now, I am sure.”</p>
+<p>“In you come, sir, in you come,—you and your friends,” he answered.
+“Very sorry, Mr. Thaddeus, but orders are very strict. Had to be
+certain of your friends before I let them in.”</p>
+<p>Inside, a gravel path wound through desolate grounds to a huge clump of
+a house, square and prosaic, all plunged in shadow save where a
+moonbeam struck one corner and glimmered in a garret window. The vast
+size of the building, with its gloom and its deathly silence, struck a
+chill to the heart. Even Thaddeus Sholto seemed ill at ease, and the
+lantern quivered and rattled in his hand.</p>
+<p>“I cannot understand it,” he said. “There must be some mistake. I
+distinctly told Bartholomew that we should be here, and yet there is no
+light in his window. I do not know what to make of it.”</p>
+<p>“Does he always guard the premises in this way?” asked Holmes.</p>
+<p>“Yes; he has followed my father’s custom. He was the favourite son, you
+know, and I sometimes think that my father may have told him more than
+he ever told me. That is Bartholomew’s window up there where the
+moonshine strikes. It is quite bright, but there is no light from
+within, I think.”</p>
+<p>“None,” said Holmes. “But I see the glint of a light in that little
+window beside the door.”</p>
+<p>“Ah, that is the housekeeper’s room. That is where old Mrs. Bernstone
+sits. She can tell us all about it. But perhaps you would not mind
+waiting here for a minute or two, for if we all go in together and she
+has no word of our coming she may be alarmed. But hush! what is that?”</p>
+<p>He held up the lantern, and his hand shook until the circles of light
+flickered and wavered all round us. Miss Morstan seized my wrist, and
+we all stood with thumping hearts, straining our ears. From the great
+black house there sounded through the silent night the saddest and most
+pitiful of sounds,—the shrill, broken whimpering of a frightened woman.</p>
+<p>“It is Mrs. Bernstone,” said Sholto. “She is the only woman in the
+house. Wait here. I shall be back in a moment.” He hurried for the
+door, and knocked in his peculiar way. We could see a tall old woman
+admit him, and sway with pleasure at the very sight of him.</p>
+<p>“Oh, Mr. Thaddeus, sir, I am so glad you have come! I am so glad you
+have come, Mr. Thaddeus, sir!” We heard her reiterated rejoicings until
+the door was closed and her voice died away into a muffled monotone.</p>
+<p>Our guide had left us the lantern. Holmes swung it slowly round, and
+peered keenly at the house, and at the great rubbish-heaps which
+cumbered the grounds. Miss Morstan and I stood together, and her hand
+was in mine. A wondrous subtle thing is love, for here were we two who
+had never seen each other before that day, between whom no word or even
+look of affection had ever passed, and yet now in an hour of trouble
+our hands instinctively sought for each other. I have marvelled at it
+since, but at the time it seemed the most natural thing that I should
+go out to her so, and, as she has often told me, there was in her also
+the instinct to turn to me for comfort and protection. So we stood hand
+in hand, like two children, and there was peace in our hearts for all
+the dark things that surrounded us.</p>
+<p>“What a strange place!” she said, looking round.</p>
+<p>“It looks as though all the moles in England had been let loose in it.
+I have seen something of the sort on the side of a hill near Ballarat,
+where the prospectors had been at work.”</p>
+<p>“And from the same cause,” said Holmes. “These are the traces of the
+treasure-seekers. You must remember that they were six years looking
+for it. No wonder that the grounds look like a gravel-pit.”</p>
+<p>At that moment the door of the house burst open, and Thaddeus Sholto
+came running out, with his hands thrown forward and terror in his eyes.</p>
+<p>“There is something amiss with Bartholomew!” he cried. “I am
+frightened! My nerves cannot stand it.” He was, indeed, half blubbering
+with fear, and his twitching feeble face peeping out from the great
+Astrakhan collar had the helpless appealing expression of a terrified
+child.</p>
+<p>“Come into the house,” said Holmes, in his crisp, firm way.</p>
+<p>“Yes, do!” pleaded Thaddeus Sholto. “I really do not feel equal to
+giving directions.”</p>
+<p>We all followed him into the housekeeper’s room, which stood upon the
+left-hand side of the passage. The old woman was pacing up and down
+with a scared look and restless picking fingers, but the sight of Miss
+Morstan appeared to have a soothing effect upon her.</p>
+<p>“God bless your sweet calm face!” she cried, with an hysterical sob.
+“It does me good to see you. Oh, but I have been sorely tried this
+day!”</p>
+<p>Our companion patted her thin, work-worn hand, and murmured some few
+words of kindly womanly comfort which brought the colour back into the
+other’s bloodless cheeks.</p>
+<p>“Master has locked himself in and will not answer me,” she explained.
+“All day I have waited to hear from him, for he often likes to be
+alone; but an hour ago I feared that something was amiss, so I went up
+and peeped through the key-hole. You must go up, Mr. Thaddeus,—you must
+go up and look for yourself. I have seen Mr. Bartholomew Sholto in joy
+and in sorrow for ten long years, but I never saw him with such a face
+on him as that.”</p>
+<p>Sherlock Holmes took the lamp and led the way, for Thaddeus Sholto’s
+teeth were chattering in his head. So shaken was he that I had to pass
+my hand under his arm as we went up the stairs, for his knees were
+trembling under him. Twice as we ascended Holmes whipped his lens out
+of his pocket and carefully examined marks which appeared to me to be
+mere shapeless smudges of dust upon the cocoa-nut matting which served
+as a stair-carpet. He walked slowly from step to step, holding the
+lamp, and shooting keen glances to right and left. Miss Morstan had
+remained behind with the frightened housekeeper.</p>
+<p>The third flight of stairs ended in a straight passage of some length,
+with a great picture in Indian tapestry upon the right of it and three
+doors upon the left. Holmes advanced along it in the same slow and
+methodical way, while we kept close at his heels, with our long black
+shadows streaming backwards down the corridor. The third door was that
+which we were seeking. Holmes knocked without receiving any answer, and
+then tried to turn the handle and force it open. It was locked on the
+inside, however, and by a broad and powerful bolt, as we could see when
+we set our lamp up against it. The key being turned, however, the hole
+was not entirely closed. Sherlock Holmes bent down to it, and instantly
+rose again with a sharp intaking of the breath.</p>
+<p>“There is something devilish in this, Watson,” said he, more moved than
+I had ever before seen him. “What do you make of it?”</p>
+<p>I stooped to the hole, and recoiled in horror. Moonlight was streaming
+into the room, and it was bright with a vague and shifty radiance.
+Looking straight at me, and suspended, as it were, in the air, for all
+beneath was in shadow, there hung a face,—the very face of our
+companion Thaddeus. There was the same high, shining head, the same
+circular bristle of red hair, the same bloodless countenance. The
+features were set, however, in a horrible smile, a fixed and unnatural
+grin, which in that still and moonlit room was more jarring to the
+nerves than any scowl or contortion. So like was the face to that of
+our little friend that I looked round at him to make sure that he was
+indeed with us. Then I recalled to mind that he had mentioned to us
+that his brother and he were twins.</p>
+<p>“This is terrible!” I said to Holmes. “What is to be done?”</p>
+<p>“The door must come down,” he answered, and, springing against it, he
+put all his weight upon the lock. It creaked and groaned, but did not
+yield. Together we flung ourselves upon it once more, and this time it
+gave way with a sudden snap, and we found ourselves within Bartholomew
+Sholto’s chamber.</p>
+<p>It appeared to have been fitted up as a chemical laboratory. A double
+line of glass-stoppered bottles was drawn up upon the wall opposite the
+door, and the table was littered over with Bunsen burners, test-tubes,
+and retorts. In the corners stood carboys of acid in wicker baskets.
+One of these appeared to leak or to have been broken, for a stream of
+dark-coloured liquid had trickled out from it, and the air was heavy
+with a peculiarly pungent, tar-like odour. A set of steps stood at one
+side of the room, in the midst of a litter of lath and plaster, and
+above them there was an opening in the ceiling large enough for a man
+to pass through. At the foot of the steps a long coil of rope was
+thrown carelessly together.</p>
+<p>By the table, in a wooden arm-chair, the master of the house was seated
+all in a heap, with his head sunk upon his left shoulder, and that
+ghastly, inscrutable smile upon his face. He was stiff and cold, and
+had clearly been dead many hours. It seemed to me that not only his
+features but all his limbs were twisted and turned in the most
+fantastic fashion. By his hand upon the table there lay a peculiar
+instrument,—a brown, close-grained stick, with a stone head like a
+hammer, rudely lashed on with coarse twine. Beside it was a torn sheet
+of note-paper with some words scrawled upon it. Holmes glanced at it,
+and then handed it to me.</p>
+<p>“You see,” he said, with a significant raising of the eyebrows.</p>
+<p>In the light of the lantern I read, with a thrill of horror, “The sign
+of the four.”</p>
+<p>“In God’s name, what does it all mean?” I asked.</p>
+<p>“It means murder,” said he, stooping over the dead man. “Ah, I expected
+it. Look here!” He pointed to what looked like a long, dark thorn stuck
+in the skin just above the ear.</p>
+<p>“It looks like a thorn,” said I.</p>
+<p>“It is a thorn. You may pick it out. But be careful, for it is
+poisoned.”</p>
+<p>I took it up between my finger and thumb. It came away from the skin so
+readily that hardly any mark was left behind. One tiny speck of blood
+showed where the puncture had been.</p>
+<p>“This is all an insoluble mystery to me,” said I. “It grows darker
+instead of clearer.”</p>
+<p>“On the contrary,” he answered, “it clears every instant. I only
+require a few missing links to have an entirely connected case.”</p>
+<p>We had almost forgotten our companion’s presence since we entered the
+chamber. He was still standing in the doorway, the very picture of
+terror, wringing his hands and moaning to himself. Suddenly, however,
+he broke out into a sharp, querulous cry.</p>
+<p>“The treasure is gone!” he said. “They have robbed him of the treasure!
+There is the hole through which we lowered it. I helped him to do it! I
+was the last person who saw him! I left him here last night, and I
+heard him lock the door as I came downstairs.”</p>
+<p>“What time was that?”</p>
+<p>“It was ten o’clock. And now he is dead, and the police will be called
+in, and I shall be suspected of having had a hand in it. Oh, yes, I am
+sure I shall. But you don’t think so, gentlemen? Surely you don’t think
+that it was I? Is it likely that I would have brought you here if it
+were I? Oh, dear! oh, dear! I know that I shall go mad!” He jerked his
+arms and stamped his feet in a kind of convulsive frenzy.</p>
+<p>“You have no reason for fear, Mr. Sholto,” said Holmes, kindly, putting
+his hand upon his shoulder. “Take my advice, and drive down to the
+station to report this matter to the police. Offer to assist them in
+every way. We shall wait here until your return.”</p>
+<p>The little man obeyed in a half-stupefied fashion, and we heard him
+stumbling down the stairs in the dark.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="The_Story_of_the_Bald-Headed_Man.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="Sherlock_Holmes_Gives_a_Demonstration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="The_Story_of_the_Bald-Headed_Man.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="Sherlock_Holmes_Gives_a_Demonstration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The End of the Islander - The Sign of the Four</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="The_Science_of_Deduction.html"><strong aria-hidden="true">1.</strong> The Science of Deduction</a></li><li class="chapter-item expanded "><a href="The_Statement_of_the_Case.html"><strong aria-hidden="true">2.</strong> The Statement of the Case</a></li><li class="chapter-item expanded "><a href="In_Quest_of_a_Solution.html"><strong aria-hidden="true">3.</strong> In Quest of a Solution</a></li><li class="chapter-item expanded "><a href="The_Story_of_the_Bald-Headed_Man.html"><strong aria-hidden="true">4.</strong> The Story of the Bald-Headed Man</a></li><li class="chapter-item expanded "><a href="The_Tragedy_of_Pondicherry_Lodge.html"><strong aria-hidden="true">5.</strong> The Tragedy of Pondicherry Lodge</a></li><li class="chapter-item expanded "><a href="Sherlock_Holmes_Gives_a_Demonstration.html"><strong aria-hidden="true">6.</strong> Sherlock Holmes Gives a Demonstration</a></li><li class="chapter-item expanded "><a href="The_Episode_of_the_Barrel.html"><strong aria-hidden="true">7.</strong> The Episode of the Barrel</a></li><li class="chapter-item expanded "><a href="The_Baker_Street_Irregulars.html"><strong aria-hidden="true">8.</strong> The Baker Street Irregulars</a></li><li class="chapter-item expanded "><a href="A_Break_in_the_Chain.html"><strong aria-hidden="true">9.</strong> A Break in the Chain</a></li><li class="chapter-item expanded "><a href="The_End_of_the_Islander.html" class="active"><strong aria-hidden="true">10.</strong> The End of the Islander</a></li><li class="chapter-item expanded "><a href="The_Great_Agra_Treasure.html"><strong aria-hidden="true">11.</strong> The Great Agra Treasure</a></li><li class="chapter-item expanded "><a href="The_Strange_Story_of_Jonathan_Small.html"><strong aria-hidden="true">12.</strong> The Strange Story of Jonathan Small</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Sign of the Four</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Sign_of_the_Four" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Sign_of_the_Four/edit/main/src/The_End_of_the_Islander.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="10-the-end-of-the-islander"><a class="header" href="#10-the-end-of-the-islander">10. The End of the Islander</a></h1>
+<p>Our meal was a merry one. Holmes could talk exceedingly well when he
+chose, and that night he did choose. He appeared to be in a state of
+nervous exaltation. I have never known him so brilliant. He spoke on a
+quick succession of subjects,—on miracle-plays, on mediæval pottery, on
+Stradivarius violins, on the Buddhism of Ceylon, and on the war-ships
+of the future,—handling each as though he had made a special study of
+it. His bright humour marked the reaction from his black depression of
+the preceding days. Athelney Jones proved to be a sociable soul in his
+hours of relaxation, and faced his dinner with the air of a <em>bon
+vivant</em>. For myself, I felt elated at the thought that we were nearing
+the end of our task, and I caught something of Holmes’s gaiety. None of
+us alluded during dinner to the cause which had brought us together.</p>
+<p>When the cloth was cleared, Holmes glanced at his watch, and filled up
+three glasses with port. “One bumper,” said he, “to the success of our
+little expedition. And now it is high time we were off. Have you a
+pistol, Watson?”</p>
+<p>“I have my old service-revolver in my desk.”</p>
+<p>“You had best take it, then. It is well to be prepared. I see that the
+cab is at the door. I ordered it for half-past six.”</p>
+<p>It was a little past seven before we reached the Westminster wharf, and
+found our launch awaiting us. Holmes eyed it critically.</p>
+<p>“Is there anything to mark it as a police-boat?”</p>
+<p>“Yes,—that green lamp at the side.”</p>
+<p>“Then take it off.”</p>
+<p>The small change was made, we stepped on board, and the ropes were cast
+off. Jones, Holmes, and I sat in the stern. There was one man at the
+rudder, one to tend the engines, and two burly police-inspectors
+forward.</p>
+<p>“Where to?” asked Jones.</p>
+<p>“To the Tower. Tell them to stop opposite Jacobson’s Yard.”</p>
+<p>Our craft was evidently a very fast one. We shot past the long lines of
+loaded barges as though they were stationary. Holmes smiled with
+satisfaction as we overhauled a river steamer and left her behind us.</p>
+<p>“We ought to be able to catch anything on the river,” he said.</p>
+<p>“Well, hardly that. But there are not many launches to beat us.”</p>
+<p>“We shall have to catch the <em>Aurora</em>, and she has a name for being a
+clipper. I will tell you how the land lies, Watson. You recollect how
+annoyed I was at being balked by so small a thing?”</p>
+<p>“Yes.”</p>
+<p>“Well, I gave my mind a thorough rest by plunging into a chemical
+analysis. One of our greatest statesmen has said that a change of work
+is the best rest. So it is. When I had succeeded in dissolving the
+hydrocarbon which I was at work at, I came back to our problem of the
+Sholtos, and thought the whole matter out again. My boys had been up
+the river and down the river without result. The launch was not at any
+landing-stage or wharf, nor had it returned. Yet it could hardly have
+been scuttled to hide their traces,—though that always remained as a
+possible hypothesis if all else failed. I knew this man Small had a
+certain degree of low cunning, but I did not think him capable of
+anything in the nature of delicate finesse. That is usually a product
+of higher education. I then reflected that since he had certainly been
+in London some time—as we had evidence that he maintained a continual
+watch over Pondicherry Lodge—he could hardly leave at a moment’s
+notice, but would need some little time, if it were only a day, to
+arrange his affairs. That was the balance of probability, at any rate.”</p>
+<p>“It seems to me to be a little weak,” said I. “It is more probable that
+he had arranged his affairs before ever he set out upon his
+expedition.”</p>
+<p>“No, I hardly think so. This lair of his would be too valuable a
+retreat in case of need for him to give it up until he was sure that he
+could do without it. But a second consideration struck me. Jonathan
+Small must have felt that the peculiar appearance of his companion,
+however much he may have top-coated him, would give rise to gossip, and
+possibly be associated with this Norwood tragedy. He was quite sharp
+enough to see that. They had started from their head-quarters under
+cover of darkness, and he would wish to get back before it was broad
+light. Now, it was past three o’clock, according to Mrs. Smith, when
+they got the boat. It would be quite bright, and people would be about
+in an hour or so. Therefore, I argued, they did not go very far. They
+paid Smith well to hold his tongue, reserved his launch for the final
+escape, and hurried to their lodgings with the treasure-box. In a
+couple of nights, when they had time to see what view the papers took,
+and whether there was any suspicion, they would make their way under
+cover of darkness to some ship at Gravesend or in the Downs, where no
+doubt they had already arranged for passages to America or the
+Colonies.”</p>
+<p>“But the launch? They could not have taken that to their lodgings.”</p>
+<p>“Quite so. I argued that the launch must be no great way off, in spite
+of its invisibility. I then put myself in the place of Small, and
+looked at it as a man of his capacity would. He would probably consider
+that to send back the launch or to keep it at a wharf would make
+pursuit easy if the police did happen to get on his track. How, then,
+could he conceal the launch and yet have her at hand when wanted? I
+wondered what I should do myself if I were in his shoes. I could only
+think of one way of doing it. I might land the launch over to some
+boat-builder or repairer, with directions to make a trifling change in
+her. She would then be removed to his shed or yard, and so be
+effectually concealed, while at the same time I could have her at a few
+hours’ notice.”</p>
+<p>“That seems simple enough.”</p>
+<p>“It is just these very simple things which are extremely liable to be
+overlooked. However, I determined to act on the idea. I started at once
+in this harmless seaman’s rig and inquired at all the yards down the
+river. I drew blank at fifteen, but at the sixteenth—Jacobson’s—I
+learned that the <em>Aurora</em> had been handed over to them two days ago by
+a wooden-legged man, with some trivial directions as to her rudder.
+‘There ain’t naught amiss with her rudder,’ said the foreman. ‘There
+she lies, with the red streaks.’ At that moment who should come down
+but Mordecai Smith, the missing owner? He was rather the worse for
+liquor. I should not, of course, have known him, but he bellowed out
+his name and the name of his launch. ‘I want her to-night at eight
+o’clock,’ said he,—‘eight o’clock sharp, mind, for I have two gentlemen
+who won’t be kept waiting.’ They had evidently paid him well, for he
+was very flush of money, chucking shillings about to the men. I
+followed him some distance, but he subsided into an ale-house: so I
+went back to the yard, and, happening to pick up one of my boys on the
+way, I stationed him as a sentry over the launch. He is to stand at
+water’s edge and wave his handkerchief to us when they start. We shall
+be lying off in the stream, and it will be a strange thing if we do not
+take men, treasure, and all.”</p>
+<p>“You have planned it all very neatly, whether they are the right men or
+not,” said Jones; “but if the affair were in my hands I should have had
+a body of police in Jacobson’s Yard, and arrested them when they came
+down.”</p>
+<p>“Which would have been never. This man Small is a pretty shrewd fellow.
+He would send a scout on ahead, and if anything made him suspicious lie
+snug for another week.”</p>
+<p>“But you might have stuck to Mordecai Smith, and so been led to their
+hiding-place,” said I.</p>
+<p>“In that case I should have wasted my day. I think that it is a hundred
+to one against Smith knowing where they live. As long as he has liquor
+and good pay, why should he ask questions? They send him messages what
+to do. No, I thought over every possible course, and this is the best.”</p>
+<p>While this conversation had been proceeding, we had been shooting the
+long series of bridges which span the Thames. As we passed the City the
+last rays of the sun were gilding the cross upon the summit of St.
+Paul’s. It was twilight before we reached the Tower.</p>
+<p>“That is Jacobson’s Yard,” said Holmes, pointing to a bristle of masts
+and rigging on the Surrey side. “Cruise gently up and down here under
+cover of this string of lighters.” He took a pair of night-glasses from
+his pocket and gazed some time at the shore. “I see my sentry at his
+post,” he remarked, “but no sign of a handkerchief.”</p>
+<p>“Suppose we go down-stream a short way and lie in wait for them,” said
+Jones, eagerly. We were all eager by this time, even the policemen and
+stokers, who had a very vague idea of what was going forward.</p>
+<p>“We have no right to take anything for granted,” Holmes answered. “It
+is certainly ten to one that they go down-stream, but we cannot be
+certain. From this point we can see the entrance of the yard, and they
+can hardly see us. It will be a clear night and plenty of light. We
+must stay where we are. See how the folk swarm over yonder in the
+gaslight.”</p>
+<p>“They are coming from work in the yard.”</p>
+<p>“Dirty-looking rascals, but I suppose every one has some little
+immortal spark concealed about him. You would not think it, to look at
+them. There is no <em>a priori</em> probability about it. A strange enigma is
+man!”</p>
+<p>“Some one calls him a soul concealed in an animal,” I suggested.</p>
+<p>“Winwood Reade is good upon the subject,” said Holmes. “He remarks
+that, while the individual man is an insoluble puzzle, in the aggregate
+he becomes a mathematical certainty. You can, for example, never
+foretell what any one man will do, but you can say with precision what
+an average number will be up to. Individuals vary, but percentages
+remain constant. So says the statistician. But do I see a handkerchief?
+Surely there is a white flutter over yonder.”</p>
+<p>“Yes, it is your boy,” I cried. “I can see him plainly.”</p>
+<p>“And there is the <em>Aurora</em>,” exclaimed Holmes, “and going like the
+devil! Full speed ahead, engineer. Make after that launch with the
+yellow light. By heaven, I shall never forgive myself if she proves to
+have the heels of us!”</p>
+<p>She had slipped unseen through the yard-entrance and passed behind two
+or three small craft, so that she had fairly got her speed up before we
+saw her. Now she was flying down the stream, near in to the shore,
+going at a tremendous rate. Jones looked gravely at her and shook his
+head.</p>
+<p>“She is very fast,” he said. “I doubt if we shall catch her.”</p>
+<p>“We <em>must</em> catch her!” cried Holmes, between his teeth. “Heap it on,
+stokers! Make her do all she can! If we burn the boat we must have
+them!”</p>
+<p>We were fairly after her now. The furnaces roared, and the powerful
+engines whizzed and clanked, like a great metallic heart. Her sharp,
+steep prow cut through the river-water and sent two rolling waves to
+right and to left of us. With every throb of the engines we sprang and
+quivered like a living thing. One great yellow lantern in our bows
+threw a long, flickering funnel of light in front of us. Right ahead a
+dark blur upon the water showed where the <em>Aurora</em> lay, and the swirl
+of white foam behind her spoke of the pace at which she was going. We
+flashed past barges, steamers, merchant-vessels, in and out, behind
+this one and round the other. Voices hailed us out of the darkness, but
+still the <em>Aurora</em> thundered on, and still we followed close upon her
+track.</p>
+<p>“Pile it on, men, pile it on!” cried Holmes, looking down into the
+engine-room, while the fierce glow from below beat upon his eager,
+aquiline face. “Get every pound of steam you can.”</p>
+<p>“I think we gain a little,” said Jones, with his eyes on the <em>Aurora</em>.</p>
+<p>“I am sure of it,” said I. “We shall be up with her in a very few
+minutes.”</p>
+<p>At that moment, however, as our evil fate would have it, a tug with
+three barges in tow blundered in between us. It was only by putting our
+helm hard down that we avoided a collision, and before we could round
+them and recover our way the <em>Aurora</em> had gained a good two hundred
+yards. She was still, however, well in view, and the murky uncertain
+twilight was setting into a clear starlit night. Our boilers were
+strained to their utmost, and the frail shell vibrated and creaked with
+the fierce energy which was driving us along. We had shot through the
+Pool, past the West India Docks, down the long Deptford Reach, and up
+again after rounding the Isle of Dogs. The dull blur in front of us
+resolved itself now clearly enough into the dainty <em>Aurora</em>. Jones
+turned our search-light upon her, so that we could plainly see the
+figures upon her deck. One man sat by the stern, with something black
+between his knees over which he stooped. Beside him lay a dark mass
+which looked like a Newfoundland dog. The boy held the tiller, while
+against the red glare of the furnace I could see old Smith, stripped to
+the waist, and shovelling coals for dear life. They may have had some
+doubt at first as to whether we were really pursuing them, but now as
+we followed every winding and turning which they took there could no
+longer be any question about it. At Greenwich we were about three
+hundred paces behind them. At Blackwall we could not have been more
+than two hundred and fifty. I have coursed many creatures in many
+countries during my checkered career, but never did sport give me such
+a wild thrill as this mad, flying man-hunt down the Thames. Steadily we
+drew in upon them, yard by yard. In the silence of the night we could
+hear the panting and clanking of their machinery. The man in the stern
+still crouched upon the deck, and his arms were moving as though he
+were busy, while every now and then he would look up and measure with a
+glance the distance which still separated us. Nearer we came and
+nearer. Jones yelled to them to stop. We were not more than four boat’s
+lengths behind them, both boats flying at a tremendous pace. It was a
+clear reach of the river, with Barking Level upon one side and the
+melancholy Plumstead Marshes upon the other. At our hail the man in the
+stern sprang up from the deck and shook his two clinched fists at us,
+cursing the while in a high, cracked voice. He was a good-sized,
+powerful man, and as he stood poising himself with legs astride I could
+see that from the thigh downwards there was but a wooden stump upon the
+right side. At the sound of his strident, angry cries there was
+movement in the huddled bundle upon the deck. It straightened itself
+into a little black man—the smallest I have ever seen—with a great,
+misshapen head and a shock of tangled, dishevelled hair. Holmes had
+already drawn his revolver, and I whipped out mine at the sight of this
+savage, distorted creature. He was wrapped in some sort of dark ulster
+or blanket, which left only his face exposed; but that face was enough
+to give a man a sleepless night. Never have I seen features so deeply
+marked with all bestiality and cruelty. His small eyes glowed and
+burned with a sombre light, and his thick lips were writhed back from
+his teeth, which grinned and chattered at us with a half animal fury.</p>
+<p>“Fire if he raises his hand,” said Holmes, quietly. We were within a
+boat’s-length by this time, and almost within touch of our quarry. I
+can see the two of them now as they stood, the white man with his legs
+far apart, shrieking out curses, and the unhallowed dwarf with his
+hideous face, and his strong yellow teeth gnashing at us in the light
+of our lantern.</p>
+<p>It was well that we had so clear a view of him. Even as we looked he
+plucked out from under his covering a short, round piece of wood, like
+a school-ruler, and clapped it to his lips. Our pistols rang out
+together. He whirled round, threw up his arms, and with a kind of
+choking cough fell sideways into the stream. I caught one glimpse of
+his venomous, menacing eyes amid the white swirl of the waters. At the
+same moment the wooden-legged man threw himself upon the rudder and put
+it hard down, so that his boat made straight in for the southern bank,
+while we shot past her stern, only clearing her by a few feet. We were
+round after her in an instant, but she was already nearly at the bank.
+It was a wild and desolate place, where the moon glimmered upon a wide
+expanse of marsh-land, with pools of stagnant water and beds of
+decaying vegetation. The launch with a dull thud ran up upon the
+mud-bank, with her bow in the air and her stern flush with the water.
+The fugitive sprang out, but his stump instantly sank its whole length
+into the sodden soil. In vain he struggled and writhed. Not one step
+could he possibly take either forwards or backwards. He yelled in
+impotent rage, and kicked frantically into the mud with his other foot,
+but his struggles only bored his wooden pin the deeper into the sticky
+bank. When we brought our launch alongside he was so firmly anchored
+that it was only by throwing the end of a rope over his shoulders that
+we were able to haul him out, and to drag him, like some evil fish,
+over our side. The two Smiths, father and son, sat sullenly in their
+launch, but came aboard meekly enough when commanded. The <em>Aurora</em>
+herself we hauled off and made fast to our stern. A solid iron chest of
+Indian workmanship stood upon the deck. This, there could be no
+question, was the same that had contained the ill-omened treasure of
+the Sholtos. There was no key, but it was of considerable weight, so we
+transferred it carefully to our own little cabin. As we steamed slowly
+up-stream again, we flashed our search-light in every direction, but
+there was no sign of the Islander. Somewhere in the dark ooze at the
+bottom of the Thames lie the bones of that strange visitor to our
+shores.</p>
+<p>“See here,” said Holmes, pointing to the wooden hatchway. “We were
+hardly quick enough with our pistols.” There, sure enough, just behind
+where we had been standing, stuck one of those murderous darts which we
+knew so well. It must have whizzed between us at the instant that we
+fired. Holmes smiled at it and shrugged his shoulders in his easy
+fashion, but I confess that it turned me sick to think of the horrible
+death which had passed so close to us that night.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="A_Break_in_the_Chain.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="The_Great_Agra_Treasure.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="A_Break_in_the_Chain.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="The_Great_Agra_Treasure.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>
